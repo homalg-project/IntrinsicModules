@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>GAP (IntrinsicModules) - Chapter 6: Examples</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="GAPDoc2HTML" />
+<link rel="stylesheet" type="text/css" href="manual.css" />
+<script src="manual.js" type="text/javascript"></script>
+<script type="text/javascript">overwriteStyle();</script>
+</head>
+<body class="chap6"  onload="jscontent()">
+
+
+<div class="chlinktop"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chap3.html">3</a>  <a href="chap4.html">4</a>  <a href="chap5.html">5</a>  <a href="chap6.html">6</a>  <a href="chapInd.html">Ind</a>  </div>
+
+<div class="chlinkprevnexttop">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap5.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chapInd.html">[Next Chapter]</a>&nbsp;  </div>
+
+<p id="mathjaxlink" class="pcenter"><a href="chap6_mj.html">[MathJax on]</a></p>
+<p><a id="X7A489A5D79DA9E5C" name="X7A489A5D79DA9E5C"></a></p>
+<div class="ChapSects"><a href="chap6.html#X7A489A5D79DA9E5C">6 <span class="Heading">Examples</span></a>
+</div>
+
+<h3>6 <span class="Heading">Examples</span></h3>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ZZ := HomalgRingOfIntegers( );</span>
+Z
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">F := HomalgFreeLeftModule( 1, ZZ );</span>
+&lt;A free left module of rank 1 on a free generator&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">1 * ZZ;</span>
+&lt;The free left module of rank 1 on a free generator&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">F := HomalgFreeLeftModule( 2, ZZ );</span>
+&lt;A free left module of rank 2 on free generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">2 * ZZ;</span>
+&lt;A free left module of rank 2 on free generators&gt;
+</pre></div>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ZZ := HomalgRingOfIntegers( );</span>
+Z
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">F := HomalgFreeRightModule( 1, ZZ );</span>
+&lt;A free right module of rank 1 on a free generator&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ZZ * 1;</span>
+&lt;The free right module of rank 1 on a free generator&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">F := HomalgFreeRightModule( 2, ZZ );</span>
+&lt;A free right module of rank 2 on free generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ZZ * 2;</span>
+&lt;A free right module of rank 2 on free generators&gt;
+</pre></div>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ZZ := HomalgRingOfIntegers( );</span>
+Z
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">F := HomalgZeroLeftModule( ZZ );</span>
+&lt;A zero left module&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">0 * ZZ;</span>
+&lt;The zero left module&gt;
+</pre></div>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ZZ := HomalgRingOfIntegers( );</span>
+Z
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">F := HomalgZeroRightModule( ZZ );</span>
+&lt;A zero right module&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ZZ * 0;</span>
+&lt;The zero right module&gt;
+</pre></div>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ZZ := HomalgRingOfIntegers( );</span>
+Z
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := HomalgMatrix( "[ \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">2, 3, 4, \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">5, 6, 7  \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">]", 2, 3, ZZ );</span>
+&lt;A 2 x 3 matrix over an internal ring&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := LeftPresentation( M );</span>
+&lt;A non-torsion left module presented by 2 relations for 3 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( M );</span>
+[ [  2,  3,  4 ],
+  [  5,  6,  7 ] ]
+
+Cokernel of the map
+
+Z^(1x2) --&gt; Z^(1x3),
+
+currently represented by the above matrix
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">BasisOfModule( M );</span>
+&lt;A set of 2 relations for 3 generators of a homalg left module&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M;</span>
+&lt;A rank 1 left module presented by 2 relations for 3 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( M );</span>
+[ [   1,   0,  -1 ],
+  [   0,   3,   6 ] ]
+
+Cokernel of the map
+
+Z^(1x2) --&gt; Z^(1x3),
+
+currently represented by the above matrix
+</pre></div>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ZZ := HomalgRingOfIntegers( );</span>
+Z
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := HomalgMatrix( "[ \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">2, 3, 4, \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">5, 6, 7  \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">]", 2, 3, ZZ );</span>
+&lt;A 2 x 3 matrix over an internal ring&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := RightPresentation( M );</span>
+&lt;A right module on 2 generators satisfying 3 relations&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( M );</span>
+[ [  2,  3,  4 ],
+  [  5,  6,  7 ] ]
+
+Cokernel of the map
+
+Z^(3x1) --&gt; Z^(2x1),
+
+currently represented by the above matrix
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">BasisOfModule( M );</span>
+&lt;A set of 2 relations for 2 generators of a homalg right module&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M;</span>
+&lt;A torsion right module on 2 generators satisfying 2 relations&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( M );</span>
+[ [  1,  0 ],
+  [  1,  3 ] ]
+
+Cokernel of the map
+
+Z^(2x1) --&gt; Z^(2x1),
+
+currently represented by the above matrix
+</pre></div>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ZZ := HomalgRingOfIntegers( );</span>
+Z
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( ZZ );</span>
+&lt;An internal ring&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Z4 := ZZ / 4;</span>
+Z/( 4 )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( Z4 );</span>
+&lt;A residue class ring&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := HomalgDiagonalMatrix( [ 2 .. 4 ], ZZ );</span>
+&lt;An unevaluated diagonal 3 x 3 matrix over an internal ring&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := LeftPresentation( M );</span>
+&lt;A torsion left module presented by 3 relations for 3 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( M );</span>
+Z/&lt; 2 &gt; + Z/&lt; 3 &gt; + Z/&lt; 4 &gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M;</span>
+&lt;A torsion left module presented by 3 relations for 3 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N := Z4 * M; ## or N := M * Z4;</span>
+&lt;A non-torsion left module presented by 2 relations for 3 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ByASmallerPresentation( N );</span>
+&lt;A non-torsion left module presented by 1 relation for 2 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( N );</span>
+Z/( 4 )/&lt; |[ 2 ]| &gt; + Z/( 4 )^(1 x 1)
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N;</span>
+&lt;A non-torsion left module presented by 1 relation for 2 generators&gt;
+</pre></div>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ZZ := HomalgRingOfIntegers( );</span>
+Z
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := HomalgMatrix( "[ \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">2, 3, 4, \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">5, 6, 7  \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">]", 2, 3, ZZ );</span>
+&lt;A 2 x 3 matrix over an internal ring&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := LeftPresentation( M );</span>
+&lt;A non-torsion left module presented by 2 relations for 3 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Z4 := ZZ / 4;</span>
+Z/( 4 )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M4 := Z4 * M;</span>
+&lt;A non-torsion left module presented by 2 relations for 3 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( M4 );</span>
+[ [  2,  3,  4 ],
+  [  5,  6,  7 ] ]
+
+modulo [ 4 ]
+
+Cokernel of the map
+
+Z/( 4 )^(1x2) --&gt; Z/( 4 )^(1x3),
+
+currently represented by the above matrix
+</pre></div>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ZZ := HomalgRingOfIntegers( );</span>
+Z
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := HomalgMatrix( "[ \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">2, 3, 4, \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">5, 6, 7  \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">]", 2, 3, ZZ );</span>
+&lt;A 2 x 3 matrix over an internal ring&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := LeftPresentation( M );</span>
+&lt;A non-torsion left module presented by 2 relations for 3 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( M );</span>
+[ [  2,  3,  4 ],
+  [  5,  6,  7 ] ]
+
+Cokernel of the map
+
+Z^(1x2) --&gt; Z^(1x3),
+
+currently represented by the above matrix
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ByASmallerPresentation( M );</span>
+&lt;A rank 1 left module presented by 1 relation for 2 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( M );</span>
+Z/&lt; 3 &gt; + Z^(1 x 1)
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M;</span>
+&lt;A rank 1 left module presented by 1 relation for 2 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SetPositionOfTheDefaultPresentation( M, 1 );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M;</span>
+&lt;A rank 1 left module presented by 2 relations for 3 generators&gt;
+</pre></div>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ZZ := HomalgRingOfIntegers( );</span>
+Z
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := HomalgMatrix( "[ \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">2, 3, 4, \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">5, 6, 7  \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">]", 2, 3, ZZ );</span>
+&lt;A 2 x 3 matrix over an internal ring&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := LeftPresentation( M );</span>
+&lt;A non-torsion left module presented by 2 relations for 3 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( M );</span>
+[ [  2,  3,  4 ],
+  [  5,  6,  7 ] ]
+
+Cokernel of the map
+
+Z^(1x2) --&gt; Z^(1x3),
+
+currently represented by the above matrix
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">dM := Resolution( M );</span>
+&lt;A non-zero right acyclic complex containing a single morphism of left modules
+ at degrees [ 0 .. 1 ]&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( dM );</span>
+-------------------------
+at homology degree: 1
+Z^(1 x 2)
+-------------------------
+[ [   1,   0,  -1 ],
+  [   0,   3,   6 ] ]
+
+the map is currently represented by the above 2 x 3 matrix
+------------v------------
+at homology degree: 0
+Z^(1 x 3)
+-------------------------
+</pre></div>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ZZ := HomalgRingOfIntegers( );</span>
+Z
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := HomalgMatrix( "[ \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">2, 3, 4, \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">5, 6, 7  \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">]", 2, 3, ZZ );</span>
+&lt;A 2 x 3 matrix over an internal ring&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := LeftPresentation( M );</span>
+&lt;A non-torsion left module presented by 2 relations for 3 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Z4 := ZZ / 4;</span>
+Z/( 4 )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M4 := Z4 * M;</span>
+&lt;A non-torsion left module presented by 2 relations for 3 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( M4 );</span>
+[ [  2,  3,  4 ],
+  [  5,  6,  7 ] ]
+
+modulo [ 4 ]
+
+Cokernel of the map
+
+Z/( 4 )^(1x2) --&gt; Z/( 4 )^(1x3),
+
+currently represented by the above matrix
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">d := Resolution( 2, M4 );</span>
+&lt;A right acyclic complex containing 2 morphisms of left modules at degrees
+ [ 0 .. 2 ]&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( d );</span>
+-------------------------
+at homology degree: 2
+0
+-------------------------
+(an empty 0 x 2 matrix)
+
+the map is currently represented by the above 0 x 2 matrix
+------------v------------
+at homology degree: 1
+Z/( 4 )^(1 x 2)
+-------------------------
+[ [  1,  0,  3 ],
+  [  0,  1,  2 ] ]
+
+modulo [ 4 ]
+
+the map is currently represented by the above 2 x 3 matrix
+------------v------------
+at homology degree: 0
+Z/( 4 )^(1 x 3)
+-------------------------
+</pre></div>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ZZ := HomalgRingOfIntegers( );</span>
+Z
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">mat := HomalgMatrix( "[ \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">0, 1, 0, \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">5, 6, 7, \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">4, 6, 7  \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">]", 3, 3, ZZ );</span>
+&lt;A 3 x 3 matrix over an internal ring&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := LeftPresentation( mat );</span>
+&lt;A left module presented by 3 relations for 3 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( M );</span>
+[ [  0,  1,  0 ],
+  [  5,  6,  7 ],
+  [  4,  6,  7 ] ]
+
+Cokernel of the map
+
+Z^(1x3) --&gt; Z^(1x3),
+
+currently represented by the above matrix
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">GetRidOfZeroGenerators( M );</span>
+&lt;A cyclic torsion left module presented by 2 relations
+ for a cyclic generator&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( M );</span>
+Z/&lt; 7, 7 &gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N := RightPresentation( Involution( mat ) );</span>
+&lt;A right module on 3 generators satisfying 3 relations&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( N );</span>
+[ [  0,  5,  4 ],
+  [  1,  6,  6 ],
+  [  0,  7,  7 ] ]
+
+Cokernel of the map
+
+Z^(3x1) --&gt; Z^(3x1),
+
+currently represented by the above matrix
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">GetRidOfZeroGenerators( N );</span>
+&lt;A cyclic torsion right module on a cyclic generator
+ satisfying 2 relations&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( N );</span>
+Z/&lt; 7, 7 &gt;
+</pre></div>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ZZ := HomalgRingOfIntegers( );</span>
+Z
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := HomalgMatrix( "[ \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">2, 3, 4, \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">5, 6, 7  \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">]", 2, 3, ZZ );</span>
+&lt;A 2 x 3 matrix over an internal ring&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := LeftPresentation( M );</span>
+&lt;A non-torsion left module presented by 2 relations for 3 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N := HomalgMatrix( "[ 2, 3, 4, 5,   6, 7, 8, 9 ]", 2, 4, ZZ );</span>
+&lt;A 2 x 4 matrix over an internal ring&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N := LeftPresentation( N );</span>
+&lt;A non-torsion left module presented by 2 relations for 4 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">mat := HomalgMatrix( "[ \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">1, 0, -2, -4, \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">0, 1,  4,  7, \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">1, 0, -2, -4  \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">]", 3, 4, ZZ );</span>
+&lt;A 3 x 4 matrix over an internal ring&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">phi := HomalgMap( mat, M, N );</span>
+&lt;A "homomorphism" of left modules&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">0 * phi;</span>
+&lt;The zero morphism of left modules&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nu := -phi;</span>
+&lt;A "homomorphism" of left modules&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">psi := HomalgMap( mat, M, N );</span>
+&lt;A "homomorphism" of left modules&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">chi := phi + psi;</span>
+&lt;A "homomorphism" of left modules&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">eta := phi - psi;</span>
+&lt;The zero morphism of left modules&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsMorphism( phi );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">phi;</span>
+&lt;A homomorphism of left modules&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nu;</span>
+&lt;A homomorphism of left modules&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsMorphism( psi );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">chi;</span>
+&lt;A homomorphism of left modules&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">lambda := HomalgMap( CertainColumns( mat, [ 1, 2, 4 ] ), M, M );</span>
+&lt;An endo"morphism" of a left module&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsMorphism( lambda );</span>
+false
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">lambda;</span>
+&lt;A non-well-defined self-map of a left module&gt;
+</pre></div>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ZZ := HomalgRingOfIntegersInExternalGAP( );</span>
+Z
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := HomalgMatrix( "[ \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">2, 3, 4, \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">5, 6, 7  \</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">]", 2, 3, ZZ );</span>
+&lt;A 2 x 3 matrix over an external ring&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := LeftPresentation( M );</span>
+&lt;A non-torsion left module presented by 2 relations for 3 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N := End( M );</span>
+&lt;A right module on 5 generators satisfying yet unknown relations&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">e := End( N );</span>
+&lt;A left module presented by yet unknown relations for 20 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ByASmallerPresentation( e );</span>
+&lt;A non-torsion left module presented by 6 relations for 7 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">g := GetGenerators( e );</span>
+[ &lt;An endomorphism of a right module&gt;, &lt;An endomorphism of a right module&gt;,
+  &lt;An endomorphism of a right module&gt;, &lt;An endomorphism of a right module&gt;,
+  &lt;An endomorphism of a right module&gt;, &lt;An endomorphism of a right module&gt;,
+  &lt;An endomorphism of a right module&gt; ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Perform( g, Display );</span>
+[ [  -42,    0,    0,    0,    0 ],
+  [  -40,  -17,    0,   24,    2 ],
+  [   -1,   19,    2,  -24,   -1 ],
+  [    2,    1,    1,    1,    2 ],
+  [  -59,  -55,   -4,   72,    4 ] ]
+
+the map is currently represented by the above 5 x 5 matrix
+[ [  -48,    0,    0,    0,    0 ],
+  [  -46,  -21,   -1,   28,    2 ],
+  [    0,   22,    2,  -28,   -1 ],
+  [    2,    1,    1,    1,    2 ],
+  [  -70,  -65,   -5,   84,    4 ] ]
+
+the map is currently represented by the above 5 x 5 matrix
+[ [  -12,    0,    0,    0,    0 ],
+  [   -9,   -7,   -1,    8,    2 ],
+  [   -1,    8,    2,   -8,    0 ],
+  [    0,    0,    0,    1,    2 ],
+  [  -13,  -23,   -5,   24,    2 ] ]
+
+the map is currently represented by the above 5 x 5 matrix
+[ [  -50,    0,    0,    0,    0 ],
+  [  -47,  -22,   -1,   29,    3 ],
+  [   -1,   23,    2,  -29,   -1 ],
+  [    2,    1,    1,    2,    2 ],
+  [  -70,  -68,   -5,   87,    5 ] ]
+
+the map is currently represented by the above 5 x 5 matrix
+[ [  -42,    0,    0,    0,    0 ],
+  [  -39,  -18,   -1,   24,    3 ],
+  [   -1,   19,    2,  -24,   -1 ],
+  [    2,    1,    1,    1,    2 ],
+  [  -58,  -56,   -5,   72,    5 ] ]
+
+the map is currently represented by the above 5 x 5 matrix
+[ [  -58,    0,    0,    0,    0 ],
+  [  -55,  -24,   -1,   34,    3 ],
+  [   -1,   25,    2,  -32,   -1 ],
+  [    2,    1,    1,    1,    2 ],
+  [  -82,  -74,   -5,   98,    5 ] ]
+
+the map is currently represented by the above 5 x 5 matrix
+[ [   -87,     0,     0,     0,     0 ],
+  [   -88,   -34,    -1,    49,     2 ],
+  [     1,    34,     1,   -47,    -2 ],
+  [     1,     2,     2,     2,     1 ],
+  [  -134,  -103,    -1,   143,     7 ] ]
+
+the map is currently represented by the above 5 x 5 matrix
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ByASmallerPresentation( N );</span>
+&lt;A non-torsion right module on 3 generators satisfying 2 relations&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Perform( g, Display );</span>
+[ [  -124,  -391,  -197 ],
+  [   107,   521,   234 ],
+  [     0,     0,     0 ] ]
+
+the map is currently represented by the above 3 x 3 matrix
+[ [  -132,  -407,  -206 ],
+  [   127,   615,   276 ],
+  [     0,     0,     0 ] ]
+
+the map is currently represented by the above 3 x 3 matrix
+[ [  -21,  -98,  -48 ],
+  [   57,  265,  121 ],
+  [    0,    0,    0 ] ]
+
+the map is currently represented by the above 3 x 3 matrix
+[ [  -149,  -461,  -233 ],
+  [   139,   664,   299 ],
+  [     0,     0,     0 ] ]
+
+the map is currently represented by the above 3 x 3 matrix
+[ [  -118,  -361,  -183 ],
+  [   110,   536,   241 ],
+  [     0,     0,     0 ] ]
+
+the map is currently represented by the above 3 x 3 matrix
+[ [  -162,  -489,  -247 ],
+  [   142,   694,   311 ],
+  [     0,     0,     0 ] ]
+
+the map is currently represented by the above 3 x 3 matrix
+[ [  -229,  -655,  -334 ],
+  [   162,   843,   373 ],
+  [     0,     0,     1 ] ]
+
+the map is currently represented by the above 3 x 3 matrix
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Perform( g, DecideZero );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Perform( g, Display );</span>
+[ [  2,  2,  1 ],
+  [  2,  2,  0 ],
+  [  0,  0,  0 ] ]
+
+the map is currently represented by the above 3 x 3 matrix
+[ [  0,  1,  1 ],
+  [  1,  0,  0 ],
+  [  0,  0,  0 ] ]
+
+the map is currently represented by the above 3 x 3 matrix
+[ [  0,  1,  0 ],
+  [  0,  1,  1 ],
+  [  0,  0,  0 ] ]
+
+the map is currently represented by the above 3 x 3 matrix
+[ [  1,  1,  1 ],
+  [  1,  1,  2 ],
+  [  0,  0,  0 ] ]
+
+the map is currently represented by the above 3 x 3 matrix
+[ [  2,  2,  0 ],
+  [  2,  2,  1 ],
+  [  0,  0,  0 ] ]
+
+the map is currently represented by the above 3 x 3 matrix
+[ [  0,  0,  2 ],
+  [  1,  1,  2 ],
+  [  0,  0,  0 ] ]
+
+the map is currently represented by the above 3 x 3 matrix
+[ [  2,  2,  2 ],
+  [  0,  0,  1 ],
+  [  0,  0,  1 ] ]
+
+the map is currently represented by the above 3 x 3 matrix
+</pre></div>
+
+
+<div class="chlinkprevnextbot">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap5.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chapInd.html">[Next Chapter]</a>&nbsp;  </div>
+
+
+<div class="chlinkbot"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chap3.html">3</a>  <a href="chap4.html">4</a>  <a href="chap5.html">5</a>  <a href="chap6.html">6</a>  <a href="chapInd.html">Ind</a>  </div>
+
+<hr />
+<p class="foot">generated by <a href="http://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc">GAPDoc2HTML</a></p>
+</body>
+</html>
