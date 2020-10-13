@@ -1,7 +1,7 @@
 name: IntrinsicModules
-version: "2020.10.02"
+version: "2020.10.03"
 license: "GPL-2.0-or-later"
-date: 2020-10-02
+date: 2020-10-03
 description: |
     Finitely presented modules over computable rings allowing multiple presentations and the notion of elements
 
@@ -31,16 +31,16 @@ needed-pkgs:
       url: "https://homalg-project.github.io/homalg_project/Modules"
     - name: "GeneralizedMorphismsForCAP"
       version: ">= 2017.03.15"
-      url: "http://homalg-project.github.io/CAP_project/GeneralizedMorphismsForCAP/"
+      url: "https://homalg-project.github.io/CAP_project/GeneralizedMorphismsForCAP"
     - name: "CAP"
       version: ">= 2019.03.02"
       url: "https://homalg-project.github.io/CAP_project/CAP"
     - name: "ModulePresentationsForCAP"
       version: ">= 2017.03.27"
-      url: "http://homalg-project.github.io/CAP_project/ModulePresentationsForCAP/"
+      url: "https://homalg-project.github.io/CAP_project/ModulePresentationsForCAP"
     - name: "IntrinsicCategories"
       version: ">= 2019.03.05"
-      url: "https://github.com/homalg-project/IntrinsicCategories"
+      url: "https://homalg-project.github.io/IntrinsicCategories"
     - name: "CategoriesWithAmbientObjects"
       version: ">= 2017.05.01"
       url: "https://homalg-project.github.io/CategoriesWithAmbientObjects"
@@ -51,7 +51,7 @@ packageinfo: https://homalg-project.github.io/IntrinsicModules/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/homalg-project/IntrinsicModules/releases/download/v2020.10.02/IntrinsicModules-2020.10.02.tar.gz
+      url: https://github.com/homalg-project/IntrinsicModules/releases/download/v2020.10.03/IntrinsicModules-2020.10.03.tar.gz
 
 abstract: |
 
@@ -64,7 +64,7 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>BS20</span>]   <b class='BibAuthor'>Barakat, M. and Saleh, K.</b>,
      <i class='BibTitle'>IntrinsicModules, Finitely presented modules over computable rings allowing multiple presentations and the notion of elements,
-             Version 2020.10.02</i>
+             Version 2020.10.03</i>
      (<span class='BibYear'>2020</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://homalg-project.github.io/IntrinsicModules">https://homalg-project.github.io/IntrinsicModules</a></span>.
@@ -72,11 +72,11 @@ citeas: |
     
 
 bibtex: |
-    @misc{ IntrinsicModules2020.10.02,
+    @misc{ IntrinsicModules2020.10.03,
       author =           {Barakat, M. and Saleh, K.},
       title =            {{IntrinsicModules},  Finitely  presented  modules over
                           computable  rings  allowing multiple presentations and
-                          the notion of elements, {V}ersion 2020.10.02},
+                          the notion of elements, {V}ersion 2020.10.03},
       month =            {Oct},
       year =             {2020},
       note =             {GAP package},
