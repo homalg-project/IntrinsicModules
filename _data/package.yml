@@ -1,7 +1,7 @@
 name: IntrinsicModules
-version: "2020.10.03"
+version: "2020.11-01"
 license: "GPL-2.0-or-later"
-date: 2020-10-03
+date: 2020-11-04
 description: |
     Finitely presented modules over computable rings allowing multiple presentations and the notion of elements
 
@@ -51,7 +51,11 @@ packageinfo: https://homalg-project.github.io/IntrinsicModules/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/homalg-project/IntrinsicModules/releases/download/v2020.10.03/IntrinsicModules-2020.10.03.tar.gz
+      url: https://github.com/homalg-project/IntrinsicModules/releases/download/v2020.11-01/IntrinsicModules-2020.11-01.tar.gz
+    - name: .zip
+      url: https://github.com/homalg-project/IntrinsicModules/releases/download/v2020.11-01/IntrinsicModules-2020.11-01.zip
+
+pdf: https://github.com/homalg-project/IntrinsicModules/releases/download/v2020.11-01/IntrinsicModules-2020.11-01.pdf
 
 abstract: |
 
@@ -64,7 +68,7 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>BS20</span>]   <b class='BibAuthor'>Barakat, M. and Saleh, K.</b>,
      <i class='BibTitle'>IntrinsicModules, Finitely presented modules over computable rings allowing multiple presentations and the notion of elements,
-             Version 2020.10.03</i>
+             Version 2020.11-01</i>
      (<span class='BibYear'>2020</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://homalg-project.github.io/IntrinsicModules">https://homalg-project.github.io/IntrinsicModules</a></span>.
@@ -72,12 +76,12 @@ citeas: |
     
 
 bibtex: |
-    @misc{ IntrinsicModules2020.10.03,
+    @misc{ IntrinsicModules2020.11-01,
       author =           {Barakat, M. and Saleh, K.},
       title =            {{IntrinsicModules},  Finitely  presented  modules over
                           computable  rings  allowing multiple presentations and
-                          the notion of elements, {V}ersion 2020.10.03},
-      month =            {Oct},
+                          the notion of elements, {V}ersion 2020.11-01},
+      month =            {Nov},
       year =             {2020},
       note =             {GAP package},
       howpublished =     {\href
