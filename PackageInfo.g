@@ -12,15 +12,15 @@ PackageName := "IntrinsicModules",
 Subtitle := "Finitely presented modules over computable rings allowing multiple presentations and the notion of elements",
 
 Version := Maximum( [
-                   "2020.10-03", ## Mohamed's version
+                   "2020.12-01", ## Mohamed's version
                    ## this line prevents merge conflicts
                    "2017.03-14", ## Kamals's version
                    ## this line prevents merge conflicts
                    "2020.11-01", ## Fabian's version
                    ] ),
 
-Date := "04/11/2020",
-Date := "04/11/2020",
+Date := "11/12/2020",
+Date := "11/12/2020",
 License := "GPL-2.0-or-later",
 
 Persons := [
@@ -96,6 +96,7 @@ Dependencies := rec(
                    [ "Modules", ">= 2019.02.02" ],
                    [ "GeneralizedMorphismsForCAP", ">= 2017.03.15" ],
                    [ "CAP", ">= 2019.03.02" ],
+                   [ "FreydCategoriesForCAP", ">= 2020.10-01" ],
                    [ "ModulePresentationsForCAP", ">= 2017.03.27" ],
                    [ "IntrinsicCategories", ">= 2019.03.05" ],
                    [ "CategoriesWithAmbientObjects", ">= 2017.05.01" ],
