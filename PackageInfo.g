@@ -12,15 +12,15 @@ PackageName := "IntrinsicModules",
 Subtitle := "Finitely presented modules over computable rings allowing multiple presentations and the notion of elements",
 
 Version := Maximum( [
-                   "2020.12-01", ## Mohamed's version
+                   "2021.02-01", ## Mohamed's version
                    ## this line prevents merge conflicts
                    "2017.03-14", ## Kamals's version
                    ## this line prevents merge conflicts
                    "2020.11-01", ## Fabian's version
                    ] ),
 
-Date := "11/12/2020",
-Date := "11/12/2020",
+Date := "28/02/2021",
+Date := "28/02/2021",
 License := "GPL-2.0-or-later",
 
 Persons := [
@@ -60,7 +60,7 @@ SourceRepository := rec(
     URL := "https://github.com/homalg-project/IntrinsicModules",
 ),
 IssueTrackerURL := Concatenation( ~.SourceRepository.URL, "/issues" ),
-PackageWWWHome  := "https://homalg-project.github.io/IntrinsicModules",
+PackageWWWHome  := "https://homalg-project.github.io/pkg/IntrinsicModules",
 PackageInfoURL  := "https://homalg-project.github.io/IntrinsicModules/PackageInfo.g",
 README_URL      := "https://homalg-project.github.io/IntrinsicModules/README.md",
 ArchiveURL      := Concatenation( "https://github.com/homalg-project/IntrinsicModules/releases/download/v", ~.Version, "/IntrinsicModules-", ~.Version ),
