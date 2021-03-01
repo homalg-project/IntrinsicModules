@@ -29,13 +29,7 @@
   
   [1X4.1 [33X[0;0YConstructors[133X[101X
   
-  [1X4.1-1 HomalgModule[101X
-  
-  [33X[1;0Y[29X[2XHomalgModule[102X( [3XM[103X ) [32X operation[133X
-  [6XReturns:[106X  [33X[0;10Ya  [5Xhomalg[105X  module,  i.e.,  an intrinsic module with generators for
-            each cell[133X
-  
-  [1X4.1-2 LeftPresentation[101X
+  [1X4.1-1 LeftPresentation[101X
   
   [33X[1;0Y[29X[2XLeftPresentation[102X( [3Xmat[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya [5Xhomalg[105X left module[133X
@@ -80,7 +74,7 @@
     [4X[28XZ/< 3 > + Z^(1 x 1)[128X[104X
   [4X[32X[104X
   
-  [1X4.1-3 RightPresentation[101X
+  [1X4.1-2 RightPresentation[101X
   
   [33X[1;0Y[29X[2XRightPresentation[102X( [3Xmat[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya [5Xhomalg[105X right module[133X
