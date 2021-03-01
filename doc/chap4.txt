@@ -79,6 +79,9 @@
   [33X[1;0Y[29X[2XRightPresentation[102X( [3Xmat[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya [5Xhomalg[105X right module[133X
   
+  [33X[0;0YThis  constructor returns the finitely presented right module with relations
+  given by the columns of the [5Xhomalg[105X matrix [3Xmat[103X.[133X
+  
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27XZZ := HomalgRingOfIntegers( );[127X[104X
     [4X[28XZ[128X[104X
