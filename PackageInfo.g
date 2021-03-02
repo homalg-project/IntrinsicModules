@@ -12,15 +12,15 @@ PackageName := "IntrinsicModules",
 Subtitle := "Finitely presented modules over computable rings allowing multiple presentations and the notion of elements",
 
 Version := Maximum( [
-                   "2021.02-05", ## Mohamed's version
+                   "2021.03-01", ## Mohamed's version
                    ## this line prevents merge conflicts
                    "2017.03-14", ## Kamals's version
                    ## this line prevents merge conflicts
                    "2020.11-01", ## Fabian's version
                    ] ),
 
-Date := "01/03/2021",
-Date := "01/03/2021",
+Date := "02/03/2021",
+Date := "02/03/2021",
 License := "GPL-2.0-or-later",
 
 Persons := [
