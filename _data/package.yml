@@ -1,7 +1,7 @@
 name: IntrinsicModules
-version: "2021.03-01"
+version: "2021.03-03"
 license: "GPL-2.0-or-later"
-date: 2021-03-02
+date: 2021-03-04
 description: |
     Finitely presented modules over computable rings allowing multiple presentations and the notion of elements
 
@@ -54,11 +54,11 @@ packageinfo: https://homalg-project.github.io/IntrinsicModules/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/homalg-project/IntrinsicModules/releases/download/v2021.03-01/IntrinsicModules-2021.03-01.tar.gz
+      url: https://github.com/homalg-project/IntrinsicModules/releases/download/v2021.03-03/IntrinsicModules-2021.03-03.tar.gz
     - name: .zip
-      url: https://github.com/homalg-project/IntrinsicModules/releases/download/v2021.03-01/IntrinsicModules-2021.03-01.zip
+      url: https://github.com/homalg-project/IntrinsicModules/releases/download/v2021.03-03/IntrinsicModules-2021.03-03.zip
 
-pdf: https://github.com/homalg-project/IntrinsicModules/releases/download/v2021.03-01/IntrinsicModules-2021.03-01.pdf
+pdf: https://github.com/homalg-project/IntrinsicModules/releases/download/v2021.03-03/IntrinsicModules-2021.03-03.pdf
 
 abstract: |
 
@@ -71,7 +71,7 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>BS21</span>]   <b class='BibAuthor'>Barakat, M. and Saleh, K.</b>,
      <i class='BibTitle'>IntrinsicModules, Finitely presented modules over computable rings allowing multiple presentations and the notion of elements,
-             Version 2021.03-01</i>
+             Version 2021.03-03</i>
      (<span class='BibYear'>2021</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://homalg-project.github.io/pkg/IntrinsicModules">https://homalg-project.github.io/pkg/IntrinsicModules</a></span>.
@@ -79,11 +79,11 @@ citeas: |
     
 
 bibtex: |
-    @misc{ IntrinsicModules2021.03-01,
+    @misc{ IntrinsicModules2021.03-03,
       author =           {Barakat, M. and Saleh, K.},
       title =            {{IntrinsicModules},  Finitely  presented  modules over
                           computable  rings  allowing multiple presentations and
-                          the notion of elements, {V}ersion 2021.03-01},
+                          the notion of elements, {V}ersion 2021.03-03},
       month =            {Mar},
       year =             {2021},
       note =             {GAP package},
