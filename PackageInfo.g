@@ -12,15 +12,15 @@ PackageName := "IntrinsicModules",
 Subtitle := "Finitely presented modules over computable rings allowing multiple presentations and the notion of elements",
 
 Version := Maximum( [
-                   "2021.03-03", ## Mohamed's version
+                   "2021.03-04", ## Mohamed's version
                    ## this line prevents merge conflicts
                    "2017.03-14", ## Kamals's version
                    ## this line prevents merge conflicts
                    "2020.11-01", ## Fabian's version
                    ] ),
 
-Date := "04/03/2021",
-Date := "04/03/2021",
+Date := "20/03/2021",
+Date := "20/03/2021",
 License := "GPL-2.0-or-later",
 
 Persons := [
@@ -29,7 +29,7 @@ Persons := [
     IsMaintainer := true,
     FirstNames := "Mohamed",
     LastName := "Barakat",
-    WWWHome := "https://mohamed-barakat.github.io",
+    WWWHome := "https://mohamed-barakat.github.io/",
     Email := "mohamed.barakat@uni-siegen.de",
     PostalAddress := Concatenation(
                "Walter-Flex-Str. 3\n",

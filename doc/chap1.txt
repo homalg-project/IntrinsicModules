@@ -37,3 +37,20 @@
   [33X[0;0YConstruct  the  category of finitely presented right [5Xhomalg[105X modules over the
   computable [5Xhomalg[105X ring [3XR[103X.[133X
   
+  
+  [1X1.3 [33X[0;0YOperations and global functions[133X[101X
+  
+  [1X1.3-1 ImageEmbeddingForFpLeftModulesByPresentations[101X
+  
+  [33X[1;0Y[29X[2XImageEmbeddingForFpLeftModulesByPresentations[102X( [3Xmorphism[103X ) [32X function[133X
+  [6XReturns:[106X  [33X[0;10Ya left [5Xhomalg[105X module map[133X
+  
+  [33X[0;0YThe image-embedding method used for [5Xhomalg[105X left modules.[133X
+  
+  [1X1.3-2 ImageEmbeddingForFpRightModulesByPresentations[101X
+  
+  [33X[1;0Y[29X[2XImageEmbeddingForFpRightModulesByPresentations[102X( [3Xmorphism[103X ) [32X function[133X
+  [6XReturns:[106X  [33X[0;10Ya right [5Xhomalg[105X module map[133X
+  
+  [33X[0;0YThe image-embedding method used for [5Xhomalg[105X right modules.[133X
+  
