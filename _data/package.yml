@@ -1,7 +1,7 @@
 name: IntrinsicModules
-version: "2021.08-01"
+version: "2021.10-01"
 license: "GPL-2.0-or-later"
-date: 2021-08-30
+date: 2021-10-15
 description: |
     Finitely presented modules over computable rings allowing multiple presentations and the notion of elements
 
@@ -24,28 +24,31 @@ needed-pkgs:
       version: ">= 1.5"
       url: "http://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc"
     - name: "MatricesForHomalg"
-      version: ">= 2017.03.15"
+      version: ">= 2021.03-01"
       url: "https://homalg-project.github.io/pkg/MatricesForHomalg"
     - name: "Modules"
-      version: ">= 2019.02.02"
+      version: ">= 2021.04-01"
       url: "https://homalg-project.github.io/pkg/Modules"
     - name: "GeneralizedMorphismsForCAP"
-      version: ">= 2017.03.15"
+      version: ">= 2020.10-01"
       url: "https://homalg-project.github.io/pkg/GeneralizedMorphismsForCAP"
     - name: "CAP"
       version: ">= 2021.05-01"
       url: "https://homalg-project.github.io/pkg/CAP"
     - name: "FreydCategoriesForCAP"
-      version: ">= 2020.10-01"
+      version: ">= 2021.03-01"
       url: "https://homalg-project.github.io/pkg/FreydCategoriesForCAP"
     - name: "ModulePresentationsForCAP"
-      version: ">= 2017.03.27"
+      version: ">= 2020.10-01"
       url: "https://homalg-project.github.io/pkg/ModulePresentationsForCAP"
+    - name: "CategoryConstructor"
+      version: ">= 2021.10-04"
+      url: "https://homalg-project.github.io/pkg/CategoryConstructor"
     - name: "IntrinsicCategories"
-      version: ">= 2021.03-03"
+      version: ">= 2021.10-02"
       url: "https://homalg-project.github.io/pkg/IntrinsicCategories"
     - name: "CategoriesWithAmbientObjects"
-      version: ">= 2021.03-05"
+      version: ">= 2021.03-07"
       url: "https://homalg-project.github.io/pkg/CategoriesWithAmbientObjects"
 
 www: https://homalg-project.github.io/pkg/IntrinsicModules
@@ -54,11 +57,11 @@ packageinfo: https://homalg-project.github.io/IntrinsicModules/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/homalg-project/IntrinsicModules/releases/download/v2021.08-01/IntrinsicModules-2021.08-01.tar.gz
+      url: https://github.com/homalg-project/IntrinsicModules/releases/download/v2021.10-01/IntrinsicModules-2021.10-01.tar.gz
     - name: .zip
-      url: https://github.com/homalg-project/IntrinsicModules/releases/download/v2021.08-01/IntrinsicModules-2021.08-01.zip
+      url: https://github.com/homalg-project/IntrinsicModules/releases/download/v2021.10-01/IntrinsicModules-2021.10-01.zip
 
-pdf: https://github.com/homalg-project/IntrinsicModules/releases/download/v2021.08-01/IntrinsicModules-2021.08-01.pdf
+pdf: https://github.com/homalg-project/IntrinsicModules/releases/download/v2021.10-01/IntrinsicModules-2021.10-01.pdf
 
 abstract: |
 
@@ -71,7 +74,7 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>BS21</span>]   <b class='BibAuthor'>Barakat, M. and Saleh, K.</b>,
      <i class='BibTitle'>IntrinsicModules, Finitely presented modules over computable rings allowing multiple presentations and the notion of elements,
-             Version 2021.08-01</i>
+             Version 2021.10-01</i>
      (<span class='BibYear'>2021</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://homalg-project.github.io/pkg/IntrinsicModules">https://homalg-project.github.io/pkg/IntrinsicModules</a></span>.
@@ -79,12 +82,12 @@ citeas: |
     
 
 bibtex: |
-    @misc{ IntrinsicModules2021.08-01,
+    @misc{ IntrinsicModules2021.10-01,
       author =           {Barakat, M. and Saleh, K.},
       title =            {{IntrinsicModules},  Finitely  presented  modules over
                           computable  rings  allowing multiple presentations and
-                          the notion of elements, {V}ersion 2021.08-01},
-      month =            {Aug},
+                          the notion of elements, {V}ersion 2021.10-01},
+      month =            {Oct},
       year =             {2021},
       note =             {GAP package},
       howpublished =     {\href
