@@ -2,17 +2,9 @@
   [1X1 [33X[0;0YCategories of finitely presented modules[133X[101X
   
   
-  [1X1.1 [33X[0;0YGAP categories[133X[101X
+  [1X1.1 [33X[0;0YConstructors[133X[101X
   
-  [1X1.1-1 IsCategoryOfHomalgModules[101X
-  
-  [33X[1;0Y[29X[2XIsCategoryOfHomalgModules[102X( [3Xarg[103X ) [32X filter[133X
-  [6XReturns:[106X  [33X[0;10Y[10Xtrue[110X or [10Xfalse[110X[133X
-  
-  
-  [1X1.2 [33X[0;0YConstructors[133X[101X
-  
-  [1X1.2-1 TurnAutoequivalenceIntoIdentityFunctorForHomalg[101X
+  [1X1.1-1 TurnAutoequivalenceIntoIdentityFunctorForHomalg[101X
   
   [33X[1;0Y[29X[2XTurnAutoequivalenceIntoIdentityFunctorForHomalg[102X( [3Xnatiso[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
@@ -21,7 +13,7 @@
   on  the  underlying  [5XCAP[105X  category into an identity rewriting functor on the
   [5Xhomalg[105X category.[133X
   
-  [1X1.2-2 CategoryOfHomalgFinitelyPresentedLeftModules[101X
+  [1X1.1-2 CategoryOfHomalgFinitelyPresentedLeftModules[101X
   
   [33X[1;0Y[29X[2XCategoryOfHomalgFinitelyPresentedLeftModules[102X( [3XR[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Yan intrinsic cateogry of left modules[133X
@@ -29,13 +21,702 @@
   [33X[0;0YConstruct  the  category  of finitely presented left [5Xhomalg[105X modules over the
   computable [5Xhomalg[105X ring [3XR[103X.[133X
   
-  [1X1.2-3 CategoryOfHomalgFinitelyPresentedRightModules[101X
+  [1X1.1-3 CategoryOfHomalgFinitelyPresentedRightModules[101X
   
   [33X[1;0Y[29X[2XCategoryOfHomalgFinitelyPresentedRightModules[102X( [3XR[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Yan intrinsic cateogry of right modules[133X
   
   [33X[0;0YConstruct  the  category of finitely presented right [5Xhomalg[105X modules over the
   computable [5Xhomalg[105X ring [3XR[103X.[133X
+  
+  
+  [1X1.2 [33X[0;0YSupported CAP operations[133X[101X
+  
+  
+  [1X1.2-1 [33X[0;0YCategory of finitely presented modules[133X[101X
+  
+  [33X[0;0YThe following CAP operations are supported:[133X
+  
+  [30X    [33X[0;6Y[2XAdditionForMorphisms[102X ([14XAdditionForMorphisms???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XAdditiveInverseForMorphisms[102X ([14XAdditiveInverseForMorphisms???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XAssociatorLeftToRight[102X ([14XAssociatorLeftToRight???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XAssociatorLeftToRightWithGivenTensorProducts[102X
+        ([14XAssociatorLeftToRightWithGivenTensorProducts???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XAssociatorRightToLeft[102X ([14XAssociatorRightToLeft???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XAssociatorRightToLeftWithGivenTensorProducts[102X
+        ([14XAssociatorRightToLeftWithGivenTensorProducts???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XAstrictionToCoimage[102X ([14XAstrictionToCoimage???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XAstrictionToCoimageWithGivenCoimage[102X
+        ([14XAstrictionToCoimageWithGivenCoimage???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XBiasedWeakFiberProduct[102X ([14XBiasedWeakFiberProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XBiasedWeakPushout[102X ([14XBiasedWeakPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XBraiding[102X ([14XBraiding???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XBraidingInverse[102X ([14XBraidingInverse???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XBraidingInverseWithGivenTensorProducts[102X
+        ([14XBraidingInverseWithGivenTensorProducts???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XBraidingWithGivenTensorProducts[102X ([14XBraidingWithGivenTensorProducts???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XCoastrictionToImage[102X ([14XCoastrictionToImage???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XCoastrictionToImageWithGivenImageObject[102X
+        ([14XCoastrictionToImageWithGivenImageObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XCoevaluationMorphism[102X ([14XCoevaluationMorphism???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XCoevaluationMorphismWithGivenRange[102X
+        ([14XCoevaluationMorphismWithGivenRange???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XCoimage[102X ([14XCoimage???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XCoimageProjection[102X ([14XCoimageProjection???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XCoimageProjectionWithGivenCoimage[102X
+        ([14XCoimageProjectionWithGivenCoimage???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XCokernelColift[102X ([14XCokernelColift???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XCokernelColiftWithGivenCokernelObject[102X
+        ([14XCokernelColiftWithGivenCokernelObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XCokernelObject[102X ([14XCokernelObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XCokernelObjectFunctorial[102X ([14XCokernelObjectFunctorial???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XCokernelObjectFunctorialWithGivenCokernelObjects[102X
+        ([14XCokernelObjectFunctorialWithGivenCokernelObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XCokernelProjection[102X ([14XCokernelProjection???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XCokernelProjectionWithGivenCokernelObject[102X
+        ([14XCokernelProjectionWithGivenCokernelObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XColift[102X ([14XColift???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XColiftAlongEpimorphism[102X ([14XColiftAlongEpimorphism???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XComponentOfMorphismFromDirectSum[102X ([14XComponentOfMorphismFromDirectSum???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XComponentOfMorphismIntoDirectSum[102X ([14XComponentOfMorphismIntoDirectSum???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XCoproduct[102X ([14XCoproduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XCoproductFunctorial[102X ([14XCoproductFunctorial???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XCoproductFunctorialWithGivenCoproducts[102X
+        ([14XCoproductFunctorialWithGivenCoproducts???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XDirectProduct[102X ([14XDirectProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XDirectProductFunctorial[102X ([14XDirectProductFunctorial???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XDirectProductFunctorialWithGivenDirectProducts[102X
+        ([14XDirectProductFunctorialWithGivenDirectProducts???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XDirectSum[102X ([14XDirectSum???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XDirectSumCodiagonalDifference[102X ([14XDirectSumCodiagonalDifference???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XDirectSumDiagonalDifference[102X ([14XDirectSumDiagonalDifference???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XDirectSumFunctorial[102X ([14XDirectSumFunctorial???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XDirectSumFunctorialWithGivenDirectSums[102X
+        ([14XDirectSumFunctorialWithGivenDirectSums???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XDirectSumMorphismToWeakBiPushout[102X ([14XDirectSumMorphismToWeakBiPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XDirectSumProjectionInPushout[102X ([14XDirectSumProjectionInPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XDistinguishedObjectOfHomomorphismStructure[102X
+        ([14XDistinguishedObjectOfHomomorphismStructure???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XDualOnMorphisms[102X ([14XDualOnMorphisms???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XDualOnMorphismsWithGivenDuals[102X ([14XDualOnMorphismsWithGivenDuals???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XDualOnObjects[102X ([14XDualOnObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XEpimorphismFromSomeProjectiveObject[102X
+        ([14XEpimorphismFromSomeProjectiveObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XEpimorphismFromSomeProjectiveObjectWithGivenSomeProjectiveObject[102X
+        ([14XEpimorphismFromSomeProjectiveObjectWithGivenSomeProjectiveObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XEvaluationForDual[102X ([14XEvaluationForDual???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XEvaluationForDualWithGivenTensorProduct[102X
+        ([14XEvaluationForDualWithGivenTensorProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XEvaluationMorphism[102X ([14XEvaluationMorphism???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XEvaluationMorphismWithGivenSource[102X
+        ([14XEvaluationMorphismWithGivenSource???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XFiberProduct[102X ([14XFiberProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XFiberProductEmbeddingInDirectSum[102X ([14XFiberProductEmbeddingInDirectSum???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XFiberProductFunctorial[102X ([14XFiberProductFunctorial???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XFiberProductFunctorialWithGivenFiberProducts[102X
+        ([14XFiberProductFunctorialWithGivenFiberProducts???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XHomologyObject[102X ([14XHomologyObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XHomologyObjectFunctorialWithGivenHomologyObjects[102X
+        ([14XHomologyObjectFunctorialWithGivenHomologyObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XHomomorphismStructureOnMorphisms[102X ([14XHomomorphismStructureOnMorphisms???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XHomomorphismStructureOnMorphismsWithGivenObjects[102X
+        ([14XHomomorphismStructureOnMorphismsWithGivenObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XHomomorphismStructureOnObjects[102X ([14XHomomorphismStructureOnObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIdentityMorphism[102X ([14XIdentityMorphism???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XImageEmbedding[102X ([14XImageEmbedding???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XImageEmbeddingWithGivenImageObject[102X
+        ([14XImageEmbeddingWithGivenImageObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XImageObject[102X ([14XImageObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInitialObject[102X ([14XInitialObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInitialObjectFunctorial[102X ([14XInitialObjectFunctorial???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInitialObjectFunctorialWithGivenInitialObjects[102X
+        ([14XInitialObjectFunctorialWithGivenInitialObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInjectionOfBiasedWeakPushout[102X ([14XInjectionOfBiasedWeakPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInjectionOfBiasedWeakPushoutWithGivenBiasedWeakPushout[102X
+        ([14XInjectionOfBiasedWeakPushoutWithGivenBiasedWeakPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInjectionOfCofactorOfCoproduct[102X ([14XInjectionOfCofactorOfCoproduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInjectionOfCofactorOfCoproductWithGivenCoproduct[102X
+        ([14XInjectionOfCofactorOfCoproductWithGivenCoproduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInjectionOfCofactorOfDirectSum[102X ([14XInjectionOfCofactorOfDirectSum???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInjectionOfCofactorOfDirectSumWithGivenDirectSum[102X
+        ([14XInjectionOfCofactorOfDirectSumWithGivenDirectSum???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInjectionOfCofactorOfPushout[102X ([14XInjectionOfCofactorOfPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInjectionOfCofactorOfPushoutWithGivenPushout[102X
+        ([14XInjectionOfCofactorOfPushoutWithGivenPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInjectionOfFirstCofactorOfWeakBiPushout[102X
+        ([14XInjectionOfFirstCofactorOfWeakBiPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInjectionOfFirstCofactorOfWeakBiPushoutWithGivenWeakBiPushout[102X
+        ([14XInjectionOfFirstCofactorOfWeakBiPushoutWithGivenWeakBiPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInjectionOfSecondCofactorOfWeakBiPushout[102X
+        ([14XInjectionOfSecondCofactorOfWeakBiPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInjectionOfSecondCofactorOfWeakBiPushoutWithGivenWeakBiPushout[102X
+        ([14XInjectionOfSecondCofactorOfWeakBiPushoutWithGivenWeakBiPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInjectiveColift[102X ([14XInjectiveColift???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInternalHomOnMorphisms[102X ([14XInternalHomOnMorphisms???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInternalHomOnMorphismsWithGivenInternalHoms[102X
+        ([14XInternalHomOnMorphismsWithGivenInternalHoms???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInternalHomOnObjects[102X ([14XInternalHomOnObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInternalHomToTensorProductAdjunctionMap[102X
+        ([14XInternalHomToTensorProductAdjunctionMap???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInterpretMorphismAsMorphismFromDistinguishedObjectToHomomorphismStructure[102X
+        (
+        InterpretMorphismAsMorphismFromDistinguishedObjectToHomomorphismStructure???
+        )[133X
+  
+  [30X    [33X[0;6Y[2XInterpretMorphismAsMorphismFromDistinguishedObjectToHomomorphismStructureWithGivenObjects[102X
+        (
+        InterpretMorphismAsMorphismFromDistinguishedObjectToHomomorphismStructureWithGivenObjects???
+        )[133X
+  
+  [30X    [33X[0;6Y[2XInterpretMorphismFromDistinguishedObjectToHomomorphismStructureAsMorphism[102X
+        (
+        InterpretMorphismFromDistinguishedObjectToHomomorphismStructureAsMorphism???
+        )[133X
+  
+  [30X    [33X[0;6Y[2XInverseForMorphisms[102X ([14XInverseForMorphisms???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XInverseMorphismFromCoimageToImageWithGivenObjects[102X
+        ([14XInverseMorphismFromCoimageToImageWithGivenObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsAutomorphism[102X ([14XIsAutomorphism???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsCodominating[102X ([14XIsCodominating???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsCongruentForMorphisms[102X ([14XIsCongruentForMorphisms???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsDominating[102X ([14XIsDominating???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsEndomorphism[102X ([14XIsEndomorphism???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsEpimorphism[102X ([14XIsEpimorphism???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsEqualAsFactorobjects[102X ([14XIsEqualAsFactorobjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsEqualAsSubobjects[102X ([14XIsEqualAsSubobjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsEqualForMorphisms[102X ([14XIsEqualForMorphisms???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsEqualForMorphismsOnMor[102X ([14XIsEqualForMorphismsOnMor???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsEqualForObjects[102X ([14XIsEqualForObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsIdempotent[102X ([14XIsIdempotent???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsIdenticalToIdentityMorphism[102X ([14XIsIdenticalToIdentityMorphism???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsIdenticalToZeroMorphism[102X ([14XIsIdenticalToZeroMorphism???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsInitial[102X ([14XIsInitial???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsIsomorphism[102X ([14XIsIsomorphism???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsMonomorphism[102X ([14XIsMonomorphism???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsOne[102X ([14XIsOne???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsTerminal[102X ([14XIsTerminal???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsWellDefinedForMorphisms[102X ([14XIsWellDefinedForMorphisms???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsWellDefinedForObjects[102X ([14XIsWellDefinedForObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsZeroForMorphisms[102X ([14XIsZeroForMorphisms???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsZeroForObjects[102X ([14XIsZeroForObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromCoimageToCokernelOfKernel[102X
+        ([14XIsomorphismFromCoimageToCokernelOfKernel???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromCokernelOfDiagonalDifferenceToPushout[102X
+        ([14XIsomorphismFromCokernelOfDiagonalDifferenceToPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromCokernelOfKernelToCoimage[102X
+        ([14XIsomorphismFromCokernelOfKernelToCoimage???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromCoproductToDirectSum[102X
+        ([14XIsomorphismFromCoproductToDirectSum???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromDirectProductToDirectSum[102X
+        ([14XIsomorphismFromDirectProductToDirectSum???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromDirectSumToCoproduct[102X
+        ([14XIsomorphismFromDirectSumToCoproduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromDirectSumToDirectProduct[102X
+        ([14XIsomorphismFromDirectSumToDirectProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromDualToInternalHom[102X ([14XIsomorphismFromDualToInternalHom???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromFiberProductToKernelOfDiagonalDifference[102X
+        ([14XIsomorphismFromFiberProductToKernelOfDiagonalDifference???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromHomologyObjectToItsConstructionAsAnImageObject[102X
+        ([14XIsomorphismFromHomologyObjectToItsConstructionAsAnImageObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromImageObjectToKernelOfCokernel[102X
+        ([14XIsomorphismFromImageObjectToKernelOfCokernel???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromInitialObjectToZeroObject[102X
+        ([14XIsomorphismFromInitialObjectToZeroObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromInternalHomToDual[102X ([14XIsomorphismFromInternalHomToDual???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromInternalHomToObject[102X
+        ([14XIsomorphismFromInternalHomToObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromInternalHomToObjectWithGivenInternalHom[102X
+        ([14XIsomorphismFromInternalHomToObjectWithGivenInternalHom???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromItsConstructionAsAnImageObjectToHomologyObject[102X
+        ([14XIsomorphismFromItsConstructionAsAnImageObjectToHomologyObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromKernelOfCokernelToImageObject[102X
+        ([14XIsomorphismFromKernelOfCokernelToImageObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromKernelOfDiagonalDifferenceToFiberProduct[102X
+        ([14XIsomorphismFromKernelOfDiagonalDifferenceToFiberProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromObjectToInternalHom[102X
+        ([14XIsomorphismFromObjectToInternalHom???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromObjectToInternalHomWithGivenInternalHom[102X
+        ([14XIsomorphismFromObjectToInternalHomWithGivenInternalHom???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromPushoutToCokernelOfDiagonalDifference[102X
+        ([14XIsomorphismFromPushoutToCokernelOfDiagonalDifference???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromTerminalObjectToZeroObject[102X
+        ([14XIsomorphismFromTerminalObjectToZeroObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromZeroObjectToInitialObject[102X
+        ([14XIsomorphismFromZeroObjectToInitialObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XIsomorphismFromZeroObjectToTerminalObject[102X
+        ([14XIsomorphismFromZeroObjectToTerminalObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XKernelEmbedding[102X ([14XKernelEmbedding???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XKernelEmbeddingWithGivenKernelObject[102X
+        ([14XKernelEmbeddingWithGivenKernelObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XKernelLift[102X ([14XKernelLift???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XKernelLiftWithGivenKernelObject[102X ([14XKernelLiftWithGivenKernelObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XKernelObject[102X ([14XKernelObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XKernelObjectFunctorial[102X ([14XKernelObjectFunctorial???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XKernelObjectFunctorialWithGivenKernelObjects[102X
+        ([14XKernelObjectFunctorialWithGivenKernelObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XLambdaElimination[102X ([14XLambdaElimination???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XLambdaIntroduction[102X ([14XLambdaIntroduction???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XLeftDistributivityExpanding[102X ([14XLeftDistributivityExpanding???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XLeftDistributivityExpandingWithGivenObjects[102X
+        ([14XLeftDistributivityExpandingWithGivenObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XLeftDistributivityFactoring[102X ([14XLeftDistributivityFactoring???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XLeftDistributivityFactoringWithGivenObjects[102X
+        ([14XLeftDistributivityFactoringWithGivenObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XLeftUnitor[102X ([14XLeftUnitor???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XLeftUnitorInverse[102X ([14XLeftUnitorInverse???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XLeftUnitorInverseWithGivenTensorProduct[102X
+        ([14XLeftUnitorInverseWithGivenTensorProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XLeftUnitorWithGivenTensorProduct[102X ([14XLeftUnitorWithGivenTensorProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XLift[102X ([14XLift???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XLiftAlongMonomorphism[102X ([14XLiftAlongMonomorphism???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XMonoidalPostComposeMorphism[102X ([14XMonoidalPostComposeMorphism???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XMonoidalPostComposeMorphismWithGivenObjects[102X
+        ([14XMonoidalPostComposeMorphismWithGivenObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XMonoidalPreComposeMorphism[102X ([14XMonoidalPreComposeMorphism???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XMonoidalPreComposeMorphismWithGivenObjects[102X
+        ([14XMonoidalPreComposeMorphismWithGivenObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XMorphismBetweenDirectSums[102X ([14XMorphismBetweenDirectSums???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XMorphismBetweenDirectSumsWithGivenDirectSums[102X
+        ([14XMorphismBetweenDirectSumsWithGivenDirectSums???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XMorphismFromCoimageToImageWithGivenObjects[102X
+        ([14XMorphismFromCoimageToImageWithGivenObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XMorphismFromFiberProductToSink[102X ([14XMorphismFromFiberProductToSink???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XMorphismFromFiberProductToSinkWithGivenFiberProduct[102X
+        ([14XMorphismFromFiberProductToSinkWithGivenFiberProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XMorphismFromKernelObjectToSink[102X ([14XMorphismFromKernelObjectToSink???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XMorphismFromKernelObjectToSinkWithGivenKernelObject[102X
+        ([14XMorphismFromKernelObjectToSinkWithGivenKernelObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XMorphismFromSourceToCokernelObject[102X
+        ([14XMorphismFromSourceToCokernelObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XMorphismFromSourceToCokernelObjectWithGivenCokernelObject[102X
+        ([14XMorphismFromSourceToCokernelObjectWithGivenCokernelObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XMorphismFromSourceToPushout[102X ([14XMorphismFromSourceToPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XMorphismFromSourceToPushoutWithGivenPushout[102X
+        ([14XMorphismFromSourceToPushoutWithGivenPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XMorphismFromTensorProductToInternalHom[102X
+        ([14XMorphismFromTensorProductToInternalHom???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XMorphismFromTensorProductToInternalHomWithGivenObjects[102X
+        ([14XMorphismFromTensorProductToInternalHomWithGivenObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XMorphismToBidual[102X ([14XMorphismToBidual???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XMorphismToBidualWithGivenBidual[102X ([14XMorphismToBidualWithGivenBidual???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XMultiplyWithElementOfCommutativeRingForMorphisms[102X
+        ([14XMultiplyWithElementOfCommutativeRingForMorphisms???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XPostCompose[102X ([14XPostCompose???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XPreCompose[102X ([14XPreCompose???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XProjectionInFactorOfDirectProduct[102X
+        ([14XProjectionInFactorOfDirectProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XProjectionInFactorOfDirectProductWithGivenDirectProduct[102X
+        ([14XProjectionInFactorOfDirectProductWithGivenDirectProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XProjectionInFactorOfDirectSum[102X ([14XProjectionInFactorOfDirectSum???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XProjectionInFactorOfDirectSumWithGivenDirectSum[102X
+        ([14XProjectionInFactorOfDirectSumWithGivenDirectSum???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XProjectionInFactorOfFiberProduct[102X ([14XProjectionInFactorOfFiberProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XProjectionInFactorOfFiberProductWithGivenFiberProduct[102X
+        ([14XProjectionInFactorOfFiberProductWithGivenFiberProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XProjectionInFirstFactorOfWeakBiFiberProduct[102X
+        ([14XProjectionInFirstFactorOfWeakBiFiberProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XProjectionInFirstFactorOfWeakBiFiberProductWithGivenWeakBiFiberProduct[102X
+        (
+        ProjectionInFirstFactorOfWeakBiFiberProductWithGivenWeakBiFiberProduct???
+        )[133X
+  
+  [30X    [33X[0;6Y[2XProjectionInSecondFactorOfWeakBiFiberProduct[102X
+        ([14XProjectionInSecondFactorOfWeakBiFiberProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XProjectionInSecondFactorOfWeakBiFiberProductWithGivenWeakBiFiberProduct[102X
+        (
+        ProjectionInSecondFactorOfWeakBiFiberProductWithGivenWeakBiFiberProduct???
+        )[133X
+  
+  [30X    [33X[0;6Y[2XProjectionOfBiasedWeakFiberProduct[102X
+        ([14XProjectionOfBiasedWeakFiberProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XProjectionOfBiasedWeakFiberProductWithGivenBiasedWeakFiberProduct[102X
+        ([14XProjectionOfBiasedWeakFiberProductWithGivenBiasedWeakFiberProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XProjectiveLift[102X ([14XProjectiveLift???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XPushout[102X ([14XPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XPushoutFunctorial[102X ([14XPushoutFunctorial???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XPushoutFunctorialWithGivenPushouts[102X
+        ([14XPushoutFunctorialWithGivenPushouts???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XRightDistributivityExpanding[102X ([14XRightDistributivityExpanding???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XRightDistributivityExpandingWithGivenObjects[102X
+        ([14XRightDistributivityExpandingWithGivenObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XRightDistributivityFactoring[102X ([14XRightDistributivityFactoring???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XRightDistributivityFactoringWithGivenObjects[102X
+        ([14XRightDistributivityFactoringWithGivenObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XRightUnitor[102X ([14XRightUnitor???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XRightUnitorInverse[102X ([14XRightUnitorInverse???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XRightUnitorInverseWithGivenTensorProduct[102X
+        ([14XRightUnitorInverseWithGivenTensorProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XRightUnitorWithGivenTensorProduct[102X
+        ([14XRightUnitorWithGivenTensorProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XSolveLinearSystemInAbCategory[102X ([14XSolveLinearSystemInAbCategory???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XSomeProjectiveObject[102X ([14XSomeProjectiveObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XSubtractionForMorphisms[102X ([14XSubtractionForMorphisms???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XTensorProductDualityCompatibilityMorphism[102X
+        ([14XTensorProductDualityCompatibilityMorphism???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XTensorProductDualityCompatibilityMorphismWithGivenObjects[102X
+        ([14XTensorProductDualityCompatibilityMorphismWithGivenObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XTensorProductInternalHomCompatibilityMorphism[102X
+        ([14XTensorProductInternalHomCompatibilityMorphism???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XTensorProductInternalHomCompatibilityMorphismWithGivenObjects[102X
+        ([14XTensorProductInternalHomCompatibilityMorphismWithGivenObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XTensorProductOnMorphisms[102X ([14XTensorProductOnMorphisms???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XTensorProductOnMorphismsWithGivenTensorProducts[102X
+        ([14XTensorProductOnMorphismsWithGivenTensorProducts???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XTensorProductOnObjects[102X ([14XTensorProductOnObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XTensorProductToInternalHomAdjunctionMap[102X
+        ([14XTensorProductToInternalHomAdjunctionMap???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XTensorUnit[102X ([14XTensorUnit???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XTerminalObject[102X ([14XTerminalObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XTerminalObjectFunctorial[102X ([14XTerminalObjectFunctorial???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XTerminalObjectFunctorialWithGivenTerminalObjects[102X
+        ([14XTerminalObjectFunctorialWithGivenTerminalObjects???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismFromBiasedWeakPushout[102X
+        ([14XUniversalMorphismFromBiasedWeakPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismFromBiasedWeakPushoutWithGivenBiasedWeakPushout[102X
+        ([14XUniversalMorphismFromBiasedWeakPushoutWithGivenBiasedWeakPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismFromCoproduct[102X ([14XUniversalMorphismFromCoproduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismFromCoproductWithGivenCoproduct[102X
+        ([14XUniversalMorphismFromCoproductWithGivenCoproduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismFromDirectSum[102X ([14XUniversalMorphismFromDirectSum???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismFromDirectSumWithGivenDirectSum[102X
+        ([14XUniversalMorphismFromDirectSumWithGivenDirectSum???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismFromImage[102X ([14XUniversalMorphismFromImage???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismFromImageWithGivenImageObject[102X
+        ([14XUniversalMorphismFromImageWithGivenImageObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismFromInitialObject[102X
+        ([14XUniversalMorphismFromInitialObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismFromInitialObjectWithGivenInitialObject[102X
+        ([14XUniversalMorphismFromInitialObjectWithGivenInitialObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismFromPushout[102X ([14XUniversalMorphismFromPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismFromPushoutWithGivenPushout[102X
+        ([14XUniversalMorphismFromPushoutWithGivenPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismFromWeakBiPushout[102X
+        ([14XUniversalMorphismFromWeakBiPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismFromWeakBiPushoutWithGivenWeakBiPushout[102X
+        ([14XUniversalMorphismFromWeakBiPushoutWithGivenWeakBiPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismFromZeroObject[102X ([14XUniversalMorphismFromZeroObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismFromZeroObjectWithGivenZeroObject[102X
+        ([14XUniversalMorphismFromZeroObjectWithGivenZeroObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismIntoBiasedWeakFiberProduct[102X
+        ([14XUniversalMorphismIntoBiasedWeakFiberProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismIntoBiasedWeakFiberProductWithGivenBiasedWeakFiberProduct[102X
+        (
+        UniversalMorphismIntoBiasedWeakFiberProductWithGivenBiasedWeakFiberProduct???
+        )[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismIntoCoimage[102X ([14XUniversalMorphismIntoCoimage???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismIntoCoimageWithGivenCoimage[102X
+        ([14XUniversalMorphismIntoCoimageWithGivenCoimage???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismIntoDirectProduct[102X
+        ([14XUniversalMorphismIntoDirectProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismIntoDirectProductWithGivenDirectProduct[102X
+        ([14XUniversalMorphismIntoDirectProductWithGivenDirectProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismIntoDirectSum[102X ([14XUniversalMorphismIntoDirectSum???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismIntoDirectSumWithGivenDirectSum[102X
+        ([14XUniversalMorphismIntoDirectSumWithGivenDirectSum???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismIntoFiberProduct[102X
+        ([14XUniversalMorphismIntoFiberProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismIntoFiberProductWithGivenFiberProduct[102X
+        ([14XUniversalMorphismIntoFiberProductWithGivenFiberProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismIntoTerminalObject[102X
+        ([14XUniversalMorphismIntoTerminalObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismIntoTerminalObjectWithGivenTerminalObject[102X
+        ([14XUniversalMorphismIntoTerminalObjectWithGivenTerminalObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismIntoWeakBiFiberProduct[102X
+        ([14XUniversalMorphismIntoWeakBiFiberProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismIntoWeakBiFiberProductWithGivenWeakBiFiberProduct[102X
+        (
+        UniversalMorphismIntoWeakBiFiberProductWithGivenWeakBiFiberProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismIntoZeroObject[102X ([14XUniversalMorphismIntoZeroObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalMorphismIntoZeroObjectWithGivenZeroObject[102X
+        ([14XUniversalMorphismIntoZeroObjectWithGivenZeroObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XUniversalPropertyOfDual[102X ([14XUniversalPropertyOfDual???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XWeakBiFiberProduct[102X ([14XWeakBiFiberProduct???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XWeakBiFiberProductMorphismToDirectSum[102X
+        ([14XWeakBiFiberProductMorphismToDirectSum???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XWeakBiPushout[102X ([14XWeakBiPushout???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XWeakCokernelColift[102X ([14XWeakCokernelColift???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XWeakCokernelColiftWithGivenWeakCokernelObject[102X
+        ([14XWeakCokernelColiftWithGivenWeakCokernelObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XWeakCokernelObject[102X ([14XWeakCokernelObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XWeakCokernelProjection[102X ([14XWeakCokernelProjection???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XWeakCokernelProjectionWithGivenWeakCokernelObject[102X
+        ([14XWeakCokernelProjectionWithGivenWeakCokernelObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XWeakKernelEmbedding[102X ([14XWeakKernelEmbedding???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XWeakKernelEmbeddingWithGivenWeakKernelObject[102X
+        ([14XWeakKernelEmbeddingWithGivenWeakKernelObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XWeakKernelLift[102X ([14XWeakKernelLift???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XWeakKernelLiftWithGivenWeakKernelObject[102X
+        ([14XWeakKernelLiftWithGivenWeakKernelObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XWeakKernelObject[102X ([14XWeakKernelObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XZeroMorphism[102X ([14XZeroMorphism???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XZeroObject[102X ([14XZeroObject???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XZeroObjectFunctorial[102X ([14XZeroObjectFunctorial???[114X)[133X
+  
+  [30X    [33X[0;6Y[2XZeroObjectFunctorialWithGivenZeroObjects[102X
+        ([14XZeroObjectFunctorialWithGivenZeroObjects???[114X)[133X
   
   
   [1X1.3 [33X[0;0YOperations and global functions[133X[101X
@@ -67,4 +748,12 @@
   [6XReturns:[106X  [33X[0;10Ya right [5Xhomalg[105X module map[133X
   
   [33X[0;0YThe image-embedding method used for [5Xhomalg[105X right modules.[133X
+  
+  
+  [1X1.4 [33X[0;0YGAP categories[133X[101X
+  
+  [1X1.4-1 IsCategoryOfHomalgModules[101X
+  
+  [33X[1;0Y[29X[2XIsCategoryOfHomalgModules[102X( [3Xarg[103X ) [32X filter[133X
+  [6XReturns:[106X  [33X[0;10Y[10Xtrue[110X or [10Xfalse[110X[133X
   

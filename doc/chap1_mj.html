@@ -25,17 +25,18 @@
 <p id="mathjaxlink" class="pcenter"><a href="chap1.html">[MathJax off]</a></p>
 <p><a id="X85E1827B832AEFB0" name="X85E1827B832AEFB0"></a></p>
 <div class="ChapSects"><a href="chap1_mj.html#X85E1827B832AEFB0">1 <span class="Heading">Categories of finitely presented modules</span></a>
-<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap1_mj.html#X7D03633A7D98026B">1.1 <span class="Heading">GAP categories</span></a>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap1_mj.html#X86EC0F0A78ECBC10">1.1 <span class="Heading">Constructors</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X7DE4B04078385D9A">1.1-1 IsCategoryOfHomalgModules</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X7CFEC2307ADF264F">1.1-1 TurnAutoequivalenceIntoIdentityFunctorForHomalg</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X7AD3BAA17CA22492">1.1-2 CategoryOfHomalgFinitelyPresentedLeftModules</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X79A465D787B9090E">1.1-3 CategoryOfHomalgFinitelyPresentedRightModules</a></span>
 </div></div>
-<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap1_mj.html#X86EC0F0A78ECBC10">1.2 <span class="Heading">Constructors</span></a>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap1_mj.html#X7DA5FC5379955E0E">1.2 <span class="Heading">Supported CAP operations</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X7CFEC2307ADF264F">1.2-1 TurnAutoequivalenceIntoIdentityFunctorForHomalg</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X7AD3BAA17CA22492">1.2-2 CategoryOfHomalgFinitelyPresentedLeftModules</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X79A465D787B9090E">1.2-3 CategoryOfHomalgFinitelyPresentedRightModules</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X81114EBA7902027C">1.2-1 <span class="Heading">Category of finitely presented modules</span></a>
+</span>
 </div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap1_mj.html#X7C8B260F7B95B432">1.3 <span class="Heading">Operations and global functions</span></a>
 </span>
@@ -45,28 +46,22 @@
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X87DF1D328193788C">1.3-3 ImageEmbeddingForFpLeftModulesByPresentations</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X78AEC95C786C05B5">1.3-4 ImageEmbeddingForFpRightModulesByPresentations</a></span>
 </div></div>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap1_mj.html#X7D03633A7D98026B">1.4 <span class="Heading">GAP categories</span></a>
+</span>
+<div class="ContSSBlock">
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X7DE4B04078385D9A">1.4-1 IsCategoryOfHomalgModules</a></span>
+</div></div>
 </div>
 
 <h3>1 <span class="Heading">Categories of finitely presented modules</span></h3>
 
-<p><a id="X7D03633A7D98026B" name="X7D03633A7D98026B"></a></p>
-
-<h4>1.1 <span class="Heading">GAP categories</span></h4>
-
-<p><a id="X7DE4B04078385D9A" name="X7DE4B04078385D9A"></a></p>
-
-<h5>1.1-1 IsCategoryOfHomalgModules</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCategoryOfHomalgModules</code>( <var class="Arg">arg</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
-<p>Returns: <code class="code">true</code> or <code class="code">false</code></p>
-
 <p><a id="X86EC0F0A78ECBC10" name="X86EC0F0A78ECBC10"></a></p>
 
-<h4>1.2 <span class="Heading">Constructors</span></h4>
+<h4>1.1 <span class="Heading">Constructors</span></h4>
 
 <p><a id="X7CFEC2307ADF264F" name="X7CFEC2307ADF264F"></a></p>
 
-<h5>1.2-1 TurnAutoequivalenceIntoIdentityFunctorForHomalg</h5>
+<h5>1.1-1 TurnAutoequivalenceIntoIdentityFunctorForHomalg</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; TurnAutoequivalenceIntoIdentityFunctorForHomalg</code>( <var class="Arg">natiso</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p>Returns: a <strong class="pkg">CAP</strong> functor</p>
@@ -75,7 +70,7 @@
 
 <p><a id="X7AD3BAA17CA22492" name="X7AD3BAA17CA22492"></a></p>
 
-<h5>1.2-2 CategoryOfHomalgFinitelyPresentedLeftModules</h5>
+<h5>1.1-2 CategoryOfHomalgFinitelyPresentedLeftModules</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CategoryOfHomalgFinitelyPresentedLeftModules</code>( <var class="Arg">R</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <p>Returns: an intrinsic cateogry of left modules</p>
@@ -84,13 +79,836 @@
 
 <p><a id="X79A465D787B9090E" name="X79A465D787B9090E"></a></p>
 
-<h5>1.2-3 CategoryOfHomalgFinitelyPresentedRightModules</h5>
+<h5>1.1-3 CategoryOfHomalgFinitelyPresentedRightModules</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CategoryOfHomalgFinitelyPresentedRightModules</code>( <var class="Arg">R</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <p>Returns: an intrinsic cateogry of right modules</p>
 
 <p>Construct the category of finitely presented right <strong class="pkg">homalg</strong> modules over the computable <strong class="pkg">homalg</strong> ring <var class="Arg">R</var>.</p>
 
+<p><a id="X7DA5FC5379955E0E" name="X7DA5FC5379955E0E"></a></p>
+
+<h4>1.2 <span class="Heading">Supported CAP operations</span></h4>
+
+<p><a id="X81114EBA7902027C" name="X81114EBA7902027C"></a></p>
+
+<h5>1.2-1 <span class="Heading">Category of finitely presented modules</span></h5>
+
+<p>The following CAP operations are supported:</p>
+
+
+<ul>
+<li><p><code class="func">AdditionForMorphisms</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">AdditiveInverseForMorphisms</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">AssociatorLeftToRight</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">AssociatorLeftToRightWithGivenTensorProducts</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">AssociatorRightToLeft</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">AssociatorRightToLeftWithGivenTensorProducts</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">AstrictionToCoimage</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">AstrictionToCoimageWithGivenCoimage</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">BiasedWeakFiberProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">BiasedWeakPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">Braiding</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">BraidingInverse</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">BraidingInverseWithGivenTensorProducts</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">BraidingWithGivenTensorProducts</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">CoastrictionToImage</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">CoastrictionToImageWithGivenImageObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">CoevaluationMorphism</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">CoevaluationMorphismWithGivenRange</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">Coimage</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">CoimageProjection</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">CoimageProjectionWithGivenCoimage</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">CokernelColift</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">CokernelColiftWithGivenCokernelObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">CokernelObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">CokernelObjectFunctorial</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">CokernelObjectFunctorialWithGivenCokernelObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">CokernelProjection</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">CokernelProjectionWithGivenCokernelObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">Colift</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ColiftAlongEpimorphism</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ComponentOfMorphismFromDirectSum</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ComponentOfMorphismIntoDirectSum</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">Coproduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">CoproductFunctorial</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">CoproductFunctorialWithGivenCoproducts</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">DirectProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">DirectProductFunctorial</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">DirectProductFunctorialWithGivenDirectProducts</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">DirectSum</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">DirectSumCodiagonalDifference</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">DirectSumDiagonalDifference</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">DirectSumFunctorial</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">DirectSumFunctorialWithGivenDirectSums</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">DirectSumMorphismToWeakBiPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">DirectSumProjectionInPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">DistinguishedObjectOfHomomorphismStructure</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">DualOnMorphisms</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">DualOnMorphismsWithGivenDuals</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">DualOnObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">EpimorphismFromSomeProjectiveObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">EpimorphismFromSomeProjectiveObjectWithGivenSomeProjectiveObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">EvaluationForDual</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">EvaluationForDualWithGivenTensorProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">EvaluationMorphism</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">EvaluationMorphismWithGivenSource</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">FiberProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">FiberProductEmbeddingInDirectSum</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">FiberProductFunctorial</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">FiberProductFunctorialWithGivenFiberProducts</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">HomologyObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">HomologyObjectFunctorialWithGivenHomologyObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">HomomorphismStructureOnMorphisms</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">HomomorphismStructureOnMorphismsWithGivenObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">HomomorphismStructureOnObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IdentityMorphism</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ImageEmbedding</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ImageEmbeddingWithGivenImageObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ImageObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InitialObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InitialObjectFunctorial</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InitialObjectFunctorialWithGivenInitialObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InjectionOfBiasedWeakPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InjectionOfBiasedWeakPushoutWithGivenBiasedWeakPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InjectionOfCofactorOfCoproduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InjectionOfCofactorOfCoproductWithGivenCoproduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InjectionOfCofactorOfDirectSum</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InjectionOfCofactorOfDirectSumWithGivenDirectSum</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InjectionOfCofactorOfPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InjectionOfCofactorOfPushoutWithGivenPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InjectionOfFirstCofactorOfWeakBiPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InjectionOfFirstCofactorOfWeakBiPushoutWithGivenWeakBiPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InjectionOfSecondCofactorOfWeakBiPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InjectionOfSecondCofactorOfWeakBiPushoutWithGivenWeakBiPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InjectiveColift</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InternalHomOnMorphisms</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InternalHomOnMorphismsWithGivenInternalHoms</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InternalHomOnObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InternalHomToTensorProductAdjunctionMap</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InterpretMorphismAsMorphismFromDistinguishedObjectToHomomorphismStructure</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InterpretMorphismAsMorphismFromDistinguishedObjectToHomomorphismStructureWithGivenObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InterpretMorphismFromDistinguishedObjectToHomomorphismStructureAsMorphism</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InverseForMorphisms</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">InverseMorphismFromCoimageToImageWithGivenObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsAutomorphism</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsCodominating</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsCongruentForMorphisms</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsDominating</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsEndomorphism</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsEpimorphism</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsEqualAsFactorobjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsEqualAsSubobjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsEqualForMorphisms</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsEqualForMorphismsOnMor</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsEqualForObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsIdempotent</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsIdenticalToIdentityMorphism</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsIdenticalToZeroMorphism</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsInitial</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsIsomorphism</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsMonomorphism</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsOne</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsTerminal</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsWellDefinedForMorphisms</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsWellDefinedForObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsZeroForMorphisms</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsZeroForObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromCoimageToCokernelOfKernel</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromCokernelOfDiagonalDifferenceToPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromCokernelOfKernelToCoimage</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromCoproductToDirectSum</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromDirectProductToDirectSum</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromDirectSumToCoproduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromDirectSumToDirectProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromDualToInternalHom</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromFiberProductToKernelOfDiagonalDifference</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromHomologyObjectToItsConstructionAsAnImageObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromImageObjectToKernelOfCokernel</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromInitialObjectToZeroObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromInternalHomToDual</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromInternalHomToObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromInternalHomToObjectWithGivenInternalHom</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromItsConstructionAsAnImageObjectToHomologyObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromKernelOfCokernelToImageObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromKernelOfDiagonalDifferenceToFiberProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromObjectToInternalHom</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromObjectToInternalHomWithGivenInternalHom</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromPushoutToCokernelOfDiagonalDifference</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromTerminalObjectToZeroObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromZeroObjectToInitialObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">IsomorphismFromZeroObjectToTerminalObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">KernelEmbedding</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">KernelEmbeddingWithGivenKernelObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">KernelLift</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">KernelLiftWithGivenKernelObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">KernelObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">KernelObjectFunctorial</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">KernelObjectFunctorialWithGivenKernelObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">LambdaElimination</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">LambdaIntroduction</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">LeftDistributivityExpanding</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">LeftDistributivityExpandingWithGivenObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">LeftDistributivityFactoring</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">LeftDistributivityFactoringWithGivenObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">LeftUnitor</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">LeftUnitorInverse</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">LeftUnitorInverseWithGivenTensorProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">LeftUnitorWithGivenTensorProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">Lift</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">LiftAlongMonomorphism</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">MonoidalPostComposeMorphism</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">MonoidalPostComposeMorphismWithGivenObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">MonoidalPreComposeMorphism</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">MonoidalPreComposeMorphismWithGivenObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">MorphismBetweenDirectSums</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">MorphismBetweenDirectSumsWithGivenDirectSums</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">MorphismFromCoimageToImageWithGivenObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">MorphismFromFiberProductToSink</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">MorphismFromFiberProductToSinkWithGivenFiberProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">MorphismFromKernelObjectToSink</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">MorphismFromKernelObjectToSinkWithGivenKernelObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">MorphismFromSourceToCokernelObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">MorphismFromSourceToCokernelObjectWithGivenCokernelObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">MorphismFromSourceToPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">MorphismFromSourceToPushoutWithGivenPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">MorphismFromTensorProductToInternalHom</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">MorphismFromTensorProductToInternalHomWithGivenObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">MorphismToBidual</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">MorphismToBidualWithGivenBidual</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">MultiplyWithElementOfCommutativeRingForMorphisms</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">PostCompose</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">PreCompose</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ProjectionInFactorOfDirectProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ProjectionInFactorOfDirectProductWithGivenDirectProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ProjectionInFactorOfDirectSum</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ProjectionInFactorOfDirectSumWithGivenDirectSum</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ProjectionInFactorOfFiberProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ProjectionInFactorOfFiberProductWithGivenFiberProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ProjectionInFirstFactorOfWeakBiFiberProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ProjectionInFirstFactorOfWeakBiFiberProductWithGivenWeakBiFiberProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ProjectionInSecondFactorOfWeakBiFiberProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ProjectionInSecondFactorOfWeakBiFiberProductWithGivenWeakBiFiberProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ProjectionOfBiasedWeakFiberProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ProjectionOfBiasedWeakFiberProductWithGivenBiasedWeakFiberProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ProjectiveLift</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">Pushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">PushoutFunctorial</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">PushoutFunctorialWithGivenPushouts</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">RightDistributivityExpanding</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">RightDistributivityExpandingWithGivenObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">RightDistributivityFactoring</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">RightDistributivityFactoringWithGivenObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">RightUnitor</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">RightUnitorInverse</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">RightUnitorInverseWithGivenTensorProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">RightUnitorWithGivenTensorProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">SolveLinearSystemInAbCategory</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">SomeProjectiveObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">SubtractionForMorphisms</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">TensorProductDualityCompatibilityMorphism</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">TensorProductDualityCompatibilityMorphismWithGivenObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">TensorProductInternalHomCompatibilityMorphism</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">TensorProductInternalHomCompatibilityMorphismWithGivenObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">TensorProductOnMorphisms</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">TensorProductOnMorphismsWithGivenTensorProducts</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">TensorProductOnObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">TensorProductToInternalHomAdjunctionMap</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">TensorUnit</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">TerminalObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">TerminalObjectFunctorial</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">TerminalObjectFunctorialWithGivenTerminalObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismFromBiasedWeakPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismFromBiasedWeakPushoutWithGivenBiasedWeakPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismFromCoproduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismFromCoproductWithGivenCoproduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismFromDirectSum</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismFromDirectSumWithGivenDirectSum</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismFromImage</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismFromImageWithGivenImageObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismFromInitialObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismFromInitialObjectWithGivenInitialObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismFromPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismFromPushoutWithGivenPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismFromWeakBiPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismFromWeakBiPushoutWithGivenWeakBiPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismFromZeroObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismFromZeroObjectWithGivenZeroObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismIntoBiasedWeakFiberProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismIntoBiasedWeakFiberProductWithGivenBiasedWeakFiberProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismIntoCoimage</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismIntoCoimageWithGivenCoimage</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismIntoDirectProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismIntoDirectProductWithGivenDirectProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismIntoDirectSum</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismIntoDirectSumWithGivenDirectSum</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismIntoFiberProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismIntoFiberProductWithGivenFiberProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismIntoTerminalObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismIntoTerminalObjectWithGivenTerminalObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismIntoWeakBiFiberProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismIntoWeakBiFiberProductWithGivenWeakBiFiberProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismIntoZeroObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalMorphismIntoZeroObjectWithGivenZeroObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">UniversalPropertyOfDual</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">WeakBiFiberProduct</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">WeakBiFiberProductMorphismToDirectSum</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">WeakBiPushout</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">WeakCokernelColift</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">WeakCokernelColiftWithGivenWeakCokernelObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">WeakCokernelObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">WeakCokernelProjection</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">WeakCokernelProjectionWithGivenWeakCokernelObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">WeakKernelEmbedding</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">WeakKernelEmbeddingWithGivenWeakKernelObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">WeakKernelLift</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">WeakKernelLiftWithGivenWeakKernelObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">WeakKernelObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ZeroMorphism</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ZeroObject</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ZeroObjectFunctorial</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+<li><p><code class="func">ZeroObjectFunctorialWithGivenZeroObjects</code> (<span class="RefLink">???</span>)</p>
+
+</li>
+</ul>
 <p><a id="X7C8B260F7B95B432" name="X7C8B260F7B95B432"></a></p>
 
 <h4>1.3 <span class="Heading">Operations and global functions</span></h4>
@@ -130,6 +948,17 @@
 <p>Returns: a right <strong class="pkg">homalg</strong> module map</p>
 
 <p>The image-embedding method used for <strong class="pkg">homalg</strong> right modules.</p>
+
+<p><a id="X7D03633A7D98026B" name="X7D03633A7D98026B"></a></p>
+
+<h4>1.4 <span class="Heading">GAP categories</span></h4>
+
+<p><a id="X7DE4B04078385D9A" name="X7DE4B04078385D9A"></a></p>
+
+<h5>1.4-1 IsCategoryOfHomalgModules</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCategoryOfHomalgModules</code>( <var class="Arg">arg</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="code">true</code> or <code class="code">false</code></p>
 
 
 <div class="chlinkprevnextbot">&nbsp;<a href="chap0_mj.html">[Top of Book]</a>&nbsp;  <a href="chap0_mj.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap0_mj.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap2_mj.html">[Next Chapter]</a>&nbsp;  </div>
