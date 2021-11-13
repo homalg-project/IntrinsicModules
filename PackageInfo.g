@@ -11,7 +11,7 @@ SetPackageInfo( rec(
 PackageName := "IntrinsicModules",
 Subtitle := "Finitely presented modules over computable rings allowing multiple presentations and the notion of elements",
 
-Version := "2021.11-02",
+Version := "2021.11-03",
 Date := "13/11/2021",
 Date := "13/11/2021",
 License := "GPL-2.0-or-later",
