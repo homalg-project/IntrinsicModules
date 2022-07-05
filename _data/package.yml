@@ -1,7 +1,7 @@
 name: IntrinsicModules
-version: "2021.11-04"
+version: "2022.07-01"
 license: "GPL-2.0-or-later"
-date: 2021-11-28
+date: 2022-07-05
 description: |
     Finitely presented modules over computable rings allowing multiple presentations and the notion of elements
 
@@ -17,7 +17,7 @@ maintainers:
     - name: Kamal Saleh
       url: https://github.com/kamalsaleh/
 
-GAP: ">= 4.8"
+GAP: ">= 4.11.1"
 
 needed-pkgs:
     - name: "GAPDoc"
@@ -57,11 +57,11 @@ packageinfo: https://homalg-project.github.io/IntrinsicModules/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/homalg-project/IntrinsicModules/releases/download/v2021.11-04/IntrinsicModules-2021.11-04.tar.gz
+      url: https://github.com/homalg-project/IntrinsicModules/releases/download/v2022.07-01/IntrinsicModules-2022.07-01.tar.gz
     - name: .zip
-      url: https://github.com/homalg-project/IntrinsicModules/releases/download/v2021.11-04/IntrinsicModules-2021.11-04.zip
+      url: https://github.com/homalg-project/IntrinsicModules/releases/download/v2022.07-01/IntrinsicModules-2022.07-01.zip
 
-pdf: https://github.com/homalg-project/IntrinsicModules/releases/download/v2021.11-04/IntrinsicModules-2021.11-04.pdf
+pdf: https://github.com/homalg-project/IntrinsicModules/releases/download/v2022.07-01/IntrinsicModules-2022.07-01.pdf
 
 abstract: |
 
@@ -72,23 +72,23 @@ keywords: |
     module, finite presentation, computable ring.
 citeas: |
     <p class='BibEntry'>
-    [<span class='BibKey'>BS21</span>]   <b class='BibAuthor'>Barakat, M. and Saleh, K.</b>,
+    [<span class='BibKey'>BS22</span>]   <b class='BibAuthor'>Barakat, M. and Saleh, K.</b>,
      <i class='BibTitle'>IntrinsicModules, Finitely presented modules over computable rings allowing multiple presentations and the notion of elements,
-             Version 2021.11-04</i>
-     (<span class='BibYear'>2021</span>)<br />
+             Version 2022.07-01</i>
+     (<span class='BibYear'>2022</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://homalg-project.github.io/pkg/IntrinsicModules">https://homalg-project.github.io/pkg/IntrinsicModules</a></span>.
     </p>
     
 
 bibtex: |
-    @misc{ IntrinsicModules2021.11-04,
+    @misc{ IntrinsicModules2022.07-01,
       author =           {Barakat, M. and Saleh, K.},
       title =            {{IntrinsicModules},  Finitely  presented  modules over
                           computable  rings  allowing multiple presentations and
-                          the notion of elements, {V}ersion 2021.11-04},
-      month =            {Nov},
-      year =             {2021},
+                          the notion of elements, {V}ersion 2022.07-01},
+      month =            {Jul},
+      year =             {2022},
       note =             {GAP package},
       howpublished =     {\href
                           {https://homalg-project.github.io/pkg/IntrinsicModules}
@@ -96,6 +96,6 @@ bibtex: |
                           {}{}{}\texttt{pkg/}\discretionary
                           {}{}{}\texttt{IntrinsicModules}}},
       keywords =         {module; finite presentation; computable ring},
-      printedkey =       {BS21}
+      printedkey =       {BS22}
     }
 

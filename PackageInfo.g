@@ -11,9 +11,9 @@ SetPackageInfo( rec(
 PackageName := "IntrinsicModules",
 Subtitle := "Finitely presented modules over computable rings allowing multiple presentations and the notion of elements",
 
-Version := "2021.11-04",
-Date := "28/11/2021",
-Date := "28/11/2021",
+Version := "2022.07-01",
+Date := "05/07/2022",
+Date := "05/07/2022",
 License := "GPL-2.0-or-later",
 
 Persons := [
@@ -83,7 +83,7 @@ PackageDoc := rec(
 ),
 
 Dependencies := rec(
-  GAP := ">= 4.8",
+  GAP := ">= 4.11.1",
   NeededOtherPackages := [ [ "GAPDoc", ">= 1.5" ],
                    [ "MatricesForHomalg", ">= 2021.03-01" ],
                    [ "Modules", ">= 2021.04-01" ],
